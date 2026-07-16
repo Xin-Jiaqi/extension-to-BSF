@@ -1,0 +1,85 @@
+# Operating-system and editor files
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Python environments and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# MATLAB temporary files
+*.asv
+slprj/
+
+# Local secrets and private site configuration
+.env
+.env.*
+!.env.example
+secrets/
+private_config/
+cluster.local.*
+slurm.local.*
+
+# C2DB and other local databases
+/c2db*.db
+/*.sqlite
+/*.sqlite3
+
+# Licensed VASP inputs and large calculation outputs
+/POTCAR
+/OUTCAR
+/CONTCAR
+/WAVECAR
+/CHGCAR
+/CHG
+/DOSCAR
+/EIGENVAL
+/PROCAR
+/IBZKPT
+/XDATCAR
+/OSZICAR
+/PCDAT
+/REPORT
+/vasprun.xml
+/vasp.out
+/vasp.err
+/*.log
+/scan_energy/inputs/POTCAR
+/scan_energy/OUTCAR
+/scan_energy/CONTCAR
+/scan_energy/WAVECAR
+/scan_energy/CHGCAR
+/scan_energy/CHG
+/scan_energy/DOSCAR
+/scan_energy/EIGENVAL
+/scan_energy/PROCAR
+/scan_energy/IBZKPT
+/scan_energy/XDATCAR
+/scan_energy/OSZICAR
+/scan_energy/PCDAT
+/scan_energy/REPORT
+/scan_energy/vasprun.xml
+/scan_energy/vasp.out
+/scan_energy/vasp.err
+/scan_energy/*.log
+
+# Generated structures, scans, and reports
+/lgnum_*/
+/bilayers/
+/*_transformed/
+/scan_energy/[0-9][0-9]/
+/scan_energy/poscars/
+/[0-9][0-9].vasp
+/scan_energy/[0-9][0-9].vasp
+/vasp_results.xlsx
+/scan_energy/vasp_results.xlsx
+/energy_matrix*.txt
+/energy_matrix*.tsv
+/scan_energy/energy_matrix*.txt
+/scan_energy/energy_matrix*.tsv
