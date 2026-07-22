@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "extension-bsf"
+version = "0.1.0a1"
+description = "Auditable bilayer and stacking-grid structure preparation"
+authors = [{name = "Jiaqi Xin"}]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "ase>=3.23",
+  "numpy>=1.24",
+]
+
+[project.scripts]
+extension-bsf = "extension_bsf.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+extension_bsf = ["py.typed"]

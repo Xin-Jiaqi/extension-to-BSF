@@ -1,0 +1,10 @@
+negative scale Direct boundary fixture
+-80.0
+1.0 0.0 0.0
+0.0 1.0 0.0
+0.0 0.0 10.0
+C
+2
+Direct
+0.25 0.25 0.95
+0.75 0.75 0.05
