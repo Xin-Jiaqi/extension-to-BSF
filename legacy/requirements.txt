@@ -1,0 +1,6 @@
+# Historical, unpinned dependencies inferred from the legacy scripts.
+# This file is documentary and is not installed by the modern package.
+ase
+numpy
+openpyxl
+pandas

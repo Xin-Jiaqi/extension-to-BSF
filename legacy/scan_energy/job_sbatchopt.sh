@@ -1,26 +1,26 @@
 #!/bin/bash
-#SBATCH -p root.bingxing
+#SBATCH -p <partition>
 #SBATCH -N 1
-#SBATCH -n 78
+#SBATCH -n 32
 #SBATCH -t 60
 #SBATCH -o vasp.out
 #SBATCH -e vasp.err
-#SBATCH -J MoSSe
+#SBATCH -J vasp
 
-# 定义VASP执行路径
-VASP_EXEC="vasp_std"
+# 脱敏模板：由本地环境显式提供可执行文件，仓库不记录集群路径。
+: "${VASP_EXEC:?Set VASP_EXEC to the local VASP executable before submission}"
 
 # 定义SBATCH脚本内容
 SBATCH_SCRIPT="#!/bin/bash
-#SBATCH -p root.bingxing
+#SBATCH -p <partition>
 #SBATCH -N 1
-#SBATCH -n 78
+#SBATCH -n 32
 #SBATCH -t 60
 #SBATCH -o vasp.out
 #SBATCH -e vasp.err
-#SBATCH -J MoSSe
+#SBATCH -J vasp
 
-mpirun $VASP_EXEC"
+mpirun -n 32 \"$VASP_EXEC\""
 
 # 循环遍历所有子目录
 for dir in */; do

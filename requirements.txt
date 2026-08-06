@@ -1,4 +1,2 @@
-ase
-numpy
-openpyxl
-pandas
+ase>=3.23
+numpy>=1.24

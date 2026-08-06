@@ -12,6 +12,9 @@ __pycache__/
 .ruff_cache/
 .venv/
 venv/
+build/
+dist/
+*.egg-info/
 
 # MATLAB temporary files
 *.asv
