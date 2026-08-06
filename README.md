@@ -50,4 +50,4 @@ The tests include scaled Cartesian POSCAR input, selective dynamics, round-trip 
 
 ASE supplies the maintained VASP parser/writer used here. Pymatgen offers broader interface construction and Zur--McGill lattice matching, Twister targets commensurate moire superlattices and structural relaxation, and atomate2 orchestrates provenance-rich first-principles workflows. This repository deliberately stays smaller: it prepares same-cell bilayer candidates and manifests that can later feed those workflow systems. Details and citations are in [ECOSYSTEM.md](https://github.com/Xin-Jiaqi/extension-to-BSF/blob/main/docs/ECOSYSTEM.md).
 
-Public release remains **BLOCKED** pending the license and intellectual-property review described in [RELEASE_GATES.md](https://github.com/Xin-Jiaqi/extension-to-BSF/blob/main/RELEASE_GATES.md). Public visibility alone does not grant reuse rights.
+The package is available under the [BSD 3-Clause License](LICENSE). Public release remains **BLOCKED** pending the ownership and disclosure review described in [RELEASE_GATES.md](https://github.com/Xin-Jiaqi/extension-to-BSF/blob/main/RELEASE_GATES.md).
